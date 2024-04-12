@@ -9,7 +9,7 @@ from pages.search import DuckDuckGoSearchPage
 def test_basic_duckduckgo_search(browser):
   search_page = DuckDuckGoSearchPage(browser)
   result_page = DuckDuckGoResultPage(browser)
-  PHRASE = "panda"
+  PHRASE = "pandas"
   
   # Given the DuckDuckGo home page is displayed
   search_page.load()
@@ -17,7 +17,7 @@ def test_basic_duckduckgo_search(browser):
   # When the user searches for "panda"
   search_page.search(PHRASE)
 
-  # Then the search result title contains "panda"
+   # Then the search result title contains "panda"
   assert PHRASE in result_page.title()
   
   # And the search result query is "panda"

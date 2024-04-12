@@ -15,7 +15,8 @@ class DuckDuckGoSearchPage:
 
   # Locators
 
-  SEARCH_INPUT = (By.ID, 'search_form_input_homepage')
+  #SEARCH_INPUT = (By.ID, 'search_form_input_homepage')
+  SEARCH_INPUT = (By.ID, 'searchbox_input')
 
   # Initializer
 
