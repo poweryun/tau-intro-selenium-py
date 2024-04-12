@@ -18,5 +18,5 @@ def test_basic_duckduckgo_search():
 
   # And the search result links pertain to "panda"
   # TODO
-
-  raise Exception("Incomplete Test")
+  
+  raise Exception("테스트코드 작성 안됨")
