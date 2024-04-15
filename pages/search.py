@@ -12,6 +12,7 @@ class DuckDuckGoSearchPage:
   # URL
 
   URL = 'https://www.duckduckgo.com'
+  #URL = 'https://www.lemong.ai'
 
   # Locators
 

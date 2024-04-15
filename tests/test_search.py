@@ -11,7 +11,7 @@ def test_basic_duckduckgo_search(browser):
   result_page = DuckDuckGoResultPage(browser)
   PHRASE = "pandas"
   
-  # Given the DuckDuckGo home page is displayed
+  # Given the lemong home page is displayed
   search_page.load()
 
   # When the user searches for "panda"

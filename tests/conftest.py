@@ -26,15 +26,17 @@ def config(scope='session'):
 @pytest.fixture
 def browser(config):
 
+  # temporary block by js
   # Initialize the WebDriver instance
-  if config['browser'] == 'Firefox':
-    b = selenium.webdriver.Firefox()
-  elif config['browser'] == 'Chrome':
+  # if config['browser'] == 'Firefox':
+  #   b = selenium.webdriver.Firefox()
+  if config['browser'] == 'Chrome':
     b = selenium.webdriver.Chrome()
-  elif config['browser'] == 'Headless Chrome':
-    opts = selenium.webdriver.ChromeOptions()
-    opts.add_argument('headless')
-    b = selenium.webdriver.Chrome(options=opts)
+  # temporary block by js
+  # elif config['browser'] == 'Headless Chrome':
+  #   opts = selenium.webdriver.ChromeOptions()
+  #   opts.add_argument('headless')
+  #   b = selenium.webdriver.Chrome(options=opts)
   else:
     raise Exception(f'Browser "{config["browser"]}" is not supported')
 
